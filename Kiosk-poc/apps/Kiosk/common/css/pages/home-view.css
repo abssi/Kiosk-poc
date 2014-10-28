@@ -1,0 +1,49 @@
+
+.homes tr.home-insurance {
+	background-image: url(../../images/content/room.jpg);
+}
+
+.homes tr.home-investment {
+	background-image: url(../../images/content/riad.jpg);
+}
+
+.homes tr.home-autoloan {
+	background-image: url(../../images/content/calculator.jpg);
+}
+
+a#cs-cancel {
+	margin: 0;
+	border-color: #DF4B20;
+	color: #BD2020;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 0px 10px;
+	background-color: white;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+a#cs-continue {
+	margin: 0;
+	border-color: #DF4B20;
+	border-width: 1px 1px 1px 0;
+	color: #BD2020;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 10px;
+	background-color: white;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+.little{
+  font-size: 10px;
+
+	}
+	.ui-footer{
+	
+	background:transparent !important;
+	}
+
+

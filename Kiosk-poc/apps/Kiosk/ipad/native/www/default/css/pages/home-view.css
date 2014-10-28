@@ -1,0 +1,13 @@
+
+/* Stylesheet content from css/pages/home-view.css in folder common */
+#imageholder{
+	
+	width: 100%;
+	
+}
+
+#imageholder img{
+	min-width:100%;
+    min-height:100%;
+
+}
