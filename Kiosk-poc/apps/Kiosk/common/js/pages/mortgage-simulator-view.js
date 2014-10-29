@@ -8,7 +8,7 @@ $("#submitButton").on("click", function() {
 
 });
 $("#back").on("click", function() {
-	loadPage ("next-best-offer-view.html");
+	loadPage ("mortgage-options-view.html");
 
 });
 
@@ -103,14 +103,35 @@ function loan() {
 	$( document ).on( "pageinit", "#page", function( event ) {
 		
 		  $( "#ask-expert" ).popup();
+		  $( "#confirmation" ).popup();
+		  $( "#confirmationSubmit").click(function(e) {
+				 
+				e.preventDefault();
+				$( "#confirmation" ).popup('close');
+//			    selectedAmount=$('#amount').val();
+//			    loadPage("../pages/mortgage-options-view.html");
+		     });
+		  
 		 
-		  $( "#popupSubmit").click(function(e) {
+		  $( "#popupSubmmit").click(function(e) {
 			 
 			e.preventDefault();
 			$( "#ask-expert" ).popup('close');
+			setTimeout(function()
+			         {
+				$( "#confirmation" ).popup('open');
+			         }, 100);
+			
 //		    selectedAmount=$('#amount').val();
 //		    loadPage("../pages/mortgage-options-view.html");
 	     });
+		  $( "#cancel").click(function(e) {
+				 
+				e.preventDefault();
+				$( "#ask-expert" ).popup('close');
+//			    selectedAmount=$('#amount').val();
+//			    loadPage("../pages/mortgage-options-view.html");
+		     });
 	});
 
 

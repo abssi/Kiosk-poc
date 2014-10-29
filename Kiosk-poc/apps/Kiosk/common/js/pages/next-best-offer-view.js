@@ -3,9 +3,9 @@
 
 
 
-$("#newmortgages").click(function() {
+$("#homeButton").click(function() {
 
-	loadPage("../pages/select-mortgage-type-view.html");
+	loadPage("../pages/home-view.html");
 		
 });
 

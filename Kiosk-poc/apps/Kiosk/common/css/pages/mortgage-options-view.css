@@ -96,14 +96,16 @@ img.info-thumb {
 }
 
 .button-wrapper {
-	border: solid 1px #E76749;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 30px;
-	color: #E76749;
+	border: solid 1px #EE5A48;
+   
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:30px;
+	color: #EE5A48;
+	
 	border-radius: 10px;
-	/* 	background-color: white; */
-	/* 	padding-bottom: 15px; */
-	/* 	padding-top: 15px; */
-	width: 88%;
+/* 	background-color: white; */
+/* 	padding-bottom: 15px; */
+/* 	padding-top: 15px; */
+	width: 88%; 
 }

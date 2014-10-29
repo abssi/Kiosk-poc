@@ -184,7 +184,7 @@ a#submitButton {
 	padding: 10px;
 }
 
-#ask-expert {
+#ask-expert , #confirmation {
 	border-width: 0px;
 }
 
@@ -192,21 +192,39 @@ a#submitButton {
 	
 }
 
-button#popupSubmit {
-	margin: 0px;
-	border-color: #E76749;
-	border-width: 1px;
-	color: #E76749;
-	text-shadow: 0 0px 0 #eeeeee;
-	border-radius: 0px 0px 10px 10px;
-	background-color: white;
-	padding-bottom: 15px;
-	padding-top: 15px;
-}
+
 
 .popup-wrapper {
 	border-color: white;
 	border-width: 1px;
 	border-radius: 10px;
 	padding: 5px;
+}
+a#cancel {
+	margin: 0;
+	border-color: #E76749;
+	color: #E76749;
+	background-color: white;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 0px 5px;
+}
+
+a#popupSubmmit {
+	margin: 0;
+	border-color: #E76749;
+	border-width: 1px 1px 1px 0;
+	color: #E76749;
+	background-color: white;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 5px;
+}
+button#confirmationSubmit{
+	
+	border-color: #E76749;
+	border-width: 1px;
+	color: #E76749;
+	background-color: white;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 5px 5px;
+	
 }
