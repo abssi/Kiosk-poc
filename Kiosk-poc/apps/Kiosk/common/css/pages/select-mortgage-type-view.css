@@ -1,4 +1,3 @@
-
 .homes tr.home-insurance {
 	background-image: url(../../images/content/door.jpg);
 }
@@ -24,27 +23,55 @@ a#cs-cancel {
 
 a#cs-continue {
 	margin: 0;
-	border-color: #DF4B20;
+	border-color: #E76749;
 	border-width: 1px 1px 1px 0;
-	color: #BD2020;
+	color: #E76749;
 	text-shadow: 0 0px 0 #eeeeee;
 	border-radius: 0px 0px 10px;
 	background-color: white;
 	padding-bottom: 15px;
 	padding-top: 15px;
 }
-.center{
+
+.center {
 	margin-left: auto;
 	margin-right: auto;
 }
-.little{
-  font-size: 10px;
 
-	}
-	.ui-footer{
+.little {
+	font-size: 10px;
+}
+
+.ui-footer {
+	background: transparent !important;
+}
+
+.popup-title {
+	text-align: center;
+	background-color: #E76749;
+	color: white;
+	margin: 0px;
+}
+#mortgae-amount{
+	border-width: 0px;
 	
-	background:transparent !important;
-	}
 
-
-
+}
+button#amountSubmit{
+	margin: 0px;
+	border-color: #E76749;
+	border-width: 1px;
+	color: #E76749;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 10px 10px;
+	background-color: white;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.mortgage-amount-wrapper{
+	border-color: white;
+	border-width: 1px;
+	border-radius:10px;
+	padding: 5px;
+	
+}
