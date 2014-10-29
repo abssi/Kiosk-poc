@@ -11,7 +11,7 @@
 	background-image: url(../../images/content/calculator.jpg);
 }
 
-a#cs-cancel {
+a#go-fr {
 	margin: 0;
 	border-color: #E76749;
 	color: #E76749;
@@ -22,7 +22,7 @@ a#cs-cancel {
 	padding-top: 15px;
 }
 
-a#cs-continue {
+a#go-ar {
 	margin: 0;
 	border-color: #E76749;
 	border-width: 1px 1px 1px 0;

@@ -3,11 +3,11 @@
 }
 
 .homes tr.home-investment {
-	background-image: url(../../images/content/investment.jpg);
+	background-image: url(../../images/content/child.jpg);
 }
 
 .homes tr.home-autoloan {
-	background-image: url(../../images/content/autoloan.jpg);
+	background-image: url(../../images/content/couple.jpg);
 }
 
 a#cs-cancel {
@@ -66,7 +66,13 @@ a#homeButton {
 
 .homes {
 	width: 100%;
-	height: 92%;
+	height: 93%;
 	border-spacing: 0px;
 	position: relative;
+}
+.next-td-text {
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	height: 262px;
 }
