@@ -13,8 +13,8 @@
 
 a#cs-cancel {
 	margin: 0;
-	border-color: #DF4B20;
-	color: #BD2020;
+	border-color: #E76749;
+	color: #E76749;
 	text-shadow: 0 0px 0 #eeeeee;
 	border-radius: 0px 0px 0px 10px;
 	background-color: white;
@@ -24,9 +24,9 @@ a#cs-cancel {
 
 a#cs-continue {
 	margin: 0;
-	border-color: #DF4B20;
+	border-color: #E76749;
 	border-width: 1px 1px 1px 0;
-	color: #BD2020;
+	color: #E76749;
 	text-shadow: 0 0px 0 #eeeeee;
 	border-radius: 0px 0px 10px;
 	background-color: white;
@@ -37,13 +37,7 @@ a#cs-continue {
 	margin-left: auto;
 	margin-right: auto;
 }
-.little{
-  font-size: 10px;
 
-	}
-	.ui-footer{
-	
-	background:transparent !important;
-	}
+
 
 

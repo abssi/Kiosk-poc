@@ -19,18 +19,16 @@ function wlCommonInit () {
 	
 	// Common initialization code goes here
 	//alert('pages/home-view.html');
-	loadPage ("pages/home-view.html");   
+	$(":mobile-pagecontainer").pagecontainer ("change","pages/home-view.html",{transition:'none'});   
 	
 	/* Navigation drawer menu */
 	
 }
 
 function loadPage (url) {
-	/*$("#pageContent").load (url, function () {
-        $(this).enhanceWithin(); /* apply styles 
-    });*/
 	
-	$(":mobile-pagecontainer").pagecontainer ("change", url);
+	
+	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'slide',reverse:false});
 } 
 
 

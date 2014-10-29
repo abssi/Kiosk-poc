@@ -1,7 +1,7 @@
 
 
-$("#existingapp").click(function() {
+$("#options").click(function() {
 
-loadPage("../pages/apps-list-view.html");
+loadPage("../pages/mortgage-options-view.html");
 	
 });

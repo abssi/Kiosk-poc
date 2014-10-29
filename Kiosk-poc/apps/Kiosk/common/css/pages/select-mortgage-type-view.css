@@ -1,14 +1,14 @@
 
 .homes tr.home-insurance {
-	background-image: url(../../images/content/insurance.jpg);
+	background-image: url(../../images/content/door.jpg);
 }
 
 .homes tr.home-investment {
-	background-image: url(../../images/content/investment.jpg);
+	background-image: url(../../images/content/plan.jpg);
 }
 
 .homes tr.home-autoloan {
-	background-image: url(../../images/content/autoloan.jpg);
+	background-image: url(../../images/content/road.jpg);
 }
 
 a#cs-cancel {
@@ -45,5 +45,6 @@ a#cs-continue {
 	
 	background:transparent !important;
 	}
+
 
 
