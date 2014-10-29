@@ -4,9 +4,7 @@
  */
 
 $("#submitButton").on("click", function() {
-	sourcePage.title = "Mortgage Simulator"; 
-	sourcePage.url = "mortgage-simulator-view.html";
-	loadPage("ask_expert/expert-view.html");
+	$( "#ask-expert" ).popup('open');
 
 });
 $("#back").on("click", function() {
@@ -51,7 +49,7 @@ function loan() {
 	var cn = document.getElementById("mortgageSimulator").getElementsByTagName(
 			"input");
 
-
+   //alert(cn.length);
 	
 	var duration = terms.duration;
 	
@@ -70,15 +68,15 @@ function loan() {
 	var r = b / (12); //(12 * 100)
 	var p = (a * r * Math.pow((1 + r), n)) / (Math.pow((1 + r), n) - 1);
 	var prin = Math.round(p * 100) / 100;
-	cn[3].value = prin+" MAD";
+	cn[5].value = prin+" MAD";
 
 	var mon = Math.round(((n * prin) - a) * 100) / 100;
 	cn[6].value = mon+" MAD";
 	//var tot = Math.round((mon / n) * 100) / 100;
 	var tot2 = (cn[4].value * a * c) /100 ;
-	cn[5].value = tot2+" MAD";
+	cn[7].value = tot2+" MAD";
 	var pmi = (cn[3].value * a * 2) / 100;
-	cn[6].value = pmi + " MAD";
+	cn[8].value = pmi + " MAD";
 	for (var i = 0; i < n; i++) {
 		var z = a * r * 1;
 		var q = Math.round(z * 100) / 100;
@@ -88,6 +86,7 @@ function loan() {
 		var l = Math.round(e * 100) / 100;
 		a = e;
 	}
+	
 	}
 	else{
 		cn[5].value="";
@@ -99,6 +98,20 @@ function loan() {
 
 	fillForm();
 	loan();
+	
+	
+	$( document ).on( "pageinit", "#page", function( event ) {
+		
+		  $( "#ask-expert" ).popup();
+		 
+		  $( "#popupSubmit").click(function(e) {
+			 
+			e.preventDefault();
+			$( "#ask-expert" ).popup('close');
+//		    selectedAmount=$('#amount').val();
+//		    loadPage("../pages/mortgage-options-view.html");
+	     });
+	});
 
 
 

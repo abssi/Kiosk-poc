@@ -11,10 +11,9 @@
 
 .options-top {
 	width: 100%;
-	height: 91%;
+	height: 84%;
 	border-spacing: 0px;
-	
-	
+	margin-top: 100px;
 }
 
 .property-details-list .thumb {
@@ -39,7 +38,6 @@
 	line-height: 40px;
 }
 
-
 .property-details-list .attribute .attribute-value {
 	display: inline-block;
 	float: right;
@@ -49,31 +47,30 @@
 }
 
 .ui-input-text.ui-custom {
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    margin: 0px;
-    text-align: right;
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	margin: 0px;
+	text-align: right;
 }
 
-.select-informations{
+.select-informations {
 	border: none;
-    box-shadow: none;
-    background-color: transparent;
-    margin: 0px;
-    text-align: center;
-    height: 40px;
-    font-size: 18px;
-    overflow: hidden;
+	box-shadow: none;
+	background-color: transparent;
+	margin: 0px;
+	text-align: center;
+	height: 40px;
+	font-size: 18px;
+	overflow: hidden;
 	width: 105%;
 	float: right;
 	direction: rtl;
 }
 
-input.rightText{
+input.rightText {
 	text-align: right;
 }
-
 
 .property-details-list .thumb-info {
 	float: right;
@@ -83,78 +80,79 @@ input.rightText{
 	text-align: right;
 }
 
-.thumb-icon{
+.thumb-icon {
 	margin-top: 8px;
 	width: 20px;
 	height: 20px;
 }
 
-#property_form{
+#property_form {
 	background-color: white;
 }
 
-#property_form ul li{
+#property_form ul li {
 	border: none;
 }
 
 .ui-listview li p {
-font-size: .75em;
-font-weight: normal;
-display: block;
-margin: 0px;
-text-overflow: ellipsis;
-overflow: hidden;
-white-space: nowrap;
+	font-size: .75em;
+	font-weight: normal;
+	display: block;
+	margin: 0px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
-a#back{
-  margin:0;
-  border-color:#E76749;
-  color: #E76749;
-  background-color:white;	
-  text-shadow: 0 0px 0 #eeeeee;	
-  border-radius:0px 0px 0px 5px ;
+a#back {
+	margin: 0;
+	border-color: #E76749;
+	color: #E76749;
+	background-color: white;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 0px 5px;
 }
-a#submitButton{
-  margin:0;
-  border-color: #E76749;
-  border-width: 1px 1px 1px 0;
-  color: #E76749;
-  background-color:white;
-  text-shadow: 0 0px 0 #eeeeee;	
-  border-radius:0px 0px 5px ;
+
+a#submitButton {
+	margin: 0;
+	border-color: #E76749;
+	border-width: 1px 1px 1px 0;
+	color: #E76749;
+	background-color: white;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 5px;
 }
 
 table, td, th {
-    border-color:#E76749;
-    background-color:white;
-    height:90px;
-    text-align: center;
-
+	border-color: #E76749;
+	background-color: white;
+	height: 90px;
+	text-align: center;
 }
 
-input.centerText{
+input.centerText {
 	text-align: center;
-	border:none;
-	border:0;
+	border: none;
+	border: 0;
 	border-color: white;
-	margin:0; 
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 
 .ui-input-text.ui-custom {
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    margin: 0px;
-    text-align: right;
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	margin: 0px;
+	text-align: right;
 }
-#testimage img{
-	max-width:900px;
-    max-height:750px;
-    min-height:380px;
 
-} 
+#testimage img {
+	max-width: 900px;
+	max-height: 750px;
+	min-height: 380px;
+}
+
 a#back {
 	margin: 0;
 	border-color: #E76749;
@@ -178,3 +176,37 @@ a#submitButton {
 	padding-top: 15px;
 }
 
+.popup-title {
+	text-align: center;
+	background-color: #E76749;
+	color: white;
+	margin: 0px;
+	padding: 10px;
+}
+
+#ask-expert {
+	border-width: 0px;
+}
+
+.popup-content {
+	
+}
+
+button#popupSubmit {
+	margin: 0px;
+	border-color: #E76749;
+	border-width: 1px;
+	color: #E76749;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 10px 10px;
+	background-color: white;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.popup-wrapper {
+	border-color: white;
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 5px;
+}
