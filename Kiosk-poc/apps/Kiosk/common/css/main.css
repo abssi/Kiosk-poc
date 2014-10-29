@@ -607,6 +607,7 @@ html, body {
 	height: 94%;
 	border-spacing: 0px;
 	position: relative;
+	padding-top: 68px;
 }
 
 .homes tr {
