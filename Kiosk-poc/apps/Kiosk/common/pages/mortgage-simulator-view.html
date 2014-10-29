@@ -40,16 +40,8 @@
 					<p>
 						<span class="attribute-label">Durée du prêt</span>
 						<span class="attribute-value">
-							<select data-role="none" class="select-informations" name="isExisting" id="select-native-1" onchange=loan()>
-								<option value="0">5ans</option>
-								<option value="1">10ans</option>
-								<option value="2">15ans</option>
-								<option value="3">20ans</option>
-								<option value="4">25ans</option>
-								<option value="5">30ans</option>
-								<option value="6">35ans</option>
-								<option value="7">40ans</option>
-							</select>
+					        <input  id="duration" data-wrapper-class="ui-custom"type = "text" readonly="readonly" />
+								
 						</span>
 					</p>
 				</div>
@@ -66,18 +58,8 @@
 					<p>
 						<span class="attribute-label">Taux d'intérêt</span>
 						<span class="attribute-value">
-    						<select data-role="none" class="select-informations" name="usage" id="select-native-2" onchange=loan()>
-								<option value="0"> 1%ARM</option>
-								<option value="1"> 2%ARM</option>
-								<option value="2"> 3ARM%</option>
-								<option value="3"> 4%ARM</option>
-								<option value="4"> 5%ARM</option>
-								<option value="5"> 6%ARM</option>
-								<option value="6"> 7%ARM</option>
-								<option value="7"> 8%ARM</option>
-								<option value="8"> 9%ARM</option>
-								<option value="9"> 10%ARM</option>
-							</select>
+					        <input  id="interest" data-wrapper-class="ui-custom" type = "text"  readonly="readonly"/>
+								
 						</span>
 					</p>
 				</div>
@@ -95,7 +77,7 @@
 						<span class="attribute-label">Montant du prêt</span> 
 						<span class="attribute-value">
 
-					<input  data-wrapper-class="ui-custom"type = "text"  onkeyup=checkAndValidate(this) />
+					<input id="amount" onkeyup=checkAndValidate(this) onchange=loan() data-wrapper-class="ui-custom"type = "text"/>
 
 						</span>
 					</p>
@@ -112,7 +94,7 @@
 					<p>
 						<span class="attribute-label">Taux d'assurance</span> 
 						<span class="attribute-value">
-							<input  data-wrapper-class="ui-custom"type = "text"  onkeyup=checkAndValidate(this) />
+							<input  data-wrapper-class="ui-custom"type = "text"  onkeyup=checkAndValidate(this) readonly="readonly"/>
 						</span>
 					</p>
 				</div>
@@ -129,7 +111,7 @@
 					<p>
 						<span class="attribute-label">Taux d'Impôt Foncier </span> 
 						<span class="attribute-value">
-							<input  data-wrapper-class="ui-custom"type = "text" onkeyup=checkAndValidate(this)  />
+							<input  data-wrapper-class="ui-custom"type = "text" onkeyup=checkAndValidate(this) readonly="readonly"  />
 						</span>
 					</p>
 				</div>

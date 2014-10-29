@@ -1,7 +1,8 @@
 
 
-$("#mortgage").click(function() {
-
-loadPage("../pages/mortgage-simulator-view.html");
-	
+$('.row').on('click', function () {
+	  terms=loanOptions[$(this).attr("id")];
+	  loadPage("../pages/mortgage-simulator-view.html");
+	   
+	  
 });
