@@ -1,6 +1,7 @@
 function initPopUp(){
 	$( "#mortgae-amount").popup();
 	$( "#mortgae-amount" ).popup('open');
+	document.getElementById("amount").focus();
 	
 	 $( "#mortgae-amount").one({
 	        popupafterclose: function() {
