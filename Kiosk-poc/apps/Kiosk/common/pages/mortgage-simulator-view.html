@@ -1,13 +1,13 @@
-<div data-role="page" id="page">
+<div data-role="page" id="page" >
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../css/pages/mortgage-simulator-view.css">
-
+    <link rel="stylesheet" href="../css/form-validator.css">
 	<div data-role="header" id="header" data-position="fixed">
 		
 		
 		
 		<div class="left">
-			<a href="#" data-rel="back">
+			<a href="../pages/mortgage-options-view.html" data-transition="slide" data-direction="reverse">
 				<img alt="back" src="../images/header/back_arrow.png" />
 				<span class="back">Options de crédit</span>
 			</a>
@@ -40,7 +40,7 @@
 					<p>
 						<span class="attribute-label">Durée du prêt</span>
 						<span class="attribute-value">
-					        <input  id="duration" data-wrapper-class="ui-custom"type = "text" readonly="readonly" />
+					        <input class="rightText"  id="duration" data-wrapper-class="ui-custom"type = "text" readonly="readonly" />
 								
 						</span>
 					</p>
@@ -58,7 +58,7 @@
 					<p>
 						<span class="attribute-label">Taux d'intérêt</span>
 						<span class="attribute-value">
-					        <input  id="interest" data-wrapper-class="ui-custom" type = "text"  readonly="readonly"/>
+					        <input class="rightText" id="interest" data-wrapper-class="ui-custom" type = "text"  readonly="readonly"/>
 								
 						</span>
 					</p>
@@ -77,7 +77,7 @@
 						<span class="attribute-label">Montant du prêt</span> 
 						<span class="attribute-value">
 
-					<input id="amount" onkeyup=checkAndValidate(this) onchange=loan() data-wrapper-class="ui-custom"type = "text"/>
+					<input class="rightText" id="amount" onkeyup=checkAndValidate(this) onchange=loan() data-wrapper-class="ui-custom"type = "text"/>
 
 						</span>
 					</p>
@@ -94,7 +94,7 @@
 					<p>
 						<span class="attribute-label">Taux d'assurance</span> 
 						<span class="attribute-value">
-							<input  data-wrapper-class="ui-custom"type = "text"  onkeyup=checkAndValidate(this) />
+							<input class="rightText"  data-wrapper-class="ui-custom"type = "text"  onkeyup=checkAndValidate(this) />
 						</span>
 					</p>
 				</div>
@@ -111,7 +111,7 @@
 					<p>
 						<span class="attribute-label">Taux d'Impôt Foncier </span> 
 						<span class="attribute-value">
-							<input  data-wrapper-class="ui-custom"type = "text" onkeyup=checkAndValidate(this) />
+							<input class="rightText" data-wrapper-class="ui-custom"type = "text" onkeyup=checkAndValidate(this) />
 						</span>
 					</p>
 				</div>
@@ -122,7 +122,7 @@
 
 </ul>
 
-
+   
 
     <table style="width: 100%;">
 	<tr>
@@ -141,6 +141,7 @@
 	 </td>
 	</tr>
 	</table>
+	
 
 		
 				
@@ -163,20 +164,24 @@
               		Tous nos experts sont occupés en ce moment.<br>
               		Merci de laisser vos coordonnés on vous contactera dès que possible.    
               </p>
-              <form class="pure-form pure-form-stacked">
-			    <fieldset>
-			       
-			
-			        <label for="email">Email</label>
-			        <input id="email" type="email" placeholder="Email">
-			
+              
+			        <form id="contact-info">
+			        <div data-type="horizontal">
+			        <label for="email">Email <em> * </em></label>
+			        <input id="email" class="validate[required,custom[email]]" type="email" placeholder="Email">
+			        </div>
+			        
+			        <div data-type="horizontal">
 			        <label for="tel">Telephone</label>
 			        <input id="tel" type="text" placeholder="Tel">
+			        </div>
 			        
+			         <div  data-type="horizontal">
 			         <label for="date">Date/Heure</label>
 			         <input id="date" type="datetime-local" placeholder="Heure">
-			    </fieldset>
-           </form>
+			         </div>
+			         </form>
+			    
               
 
               <div class="ui-grid-a ui-responsive">
@@ -189,14 +194,14 @@
     
     	<div data-role="popup" id="confirmation"  data-dismissible="false" data-overlay-theme="b">
         <div class="popup-content">
-              <h4 class="popup-title">          </h4>
+              <h4 class="popup-title">Merci.</h4>
               <div class="popup-wrapper">
               <p> 
               		
-              		Vous serai bientot  contacter par un de nos  expert. <br>
+              		Vous serai bientot  contacter par un de nos  experts. <br>
               		Merci. 
               </p>
-              <button id="confirmationSubmit" type="submit">D'accord</button>
+              <button id="confirmationSubmit" >Ok</button>
               </div>
               
         </div>
@@ -211,7 +216,8 @@
 	
 
 
-
+    <script src="../js/libs/jquery.validationEngine-fr.js"></script>
+	<script src="../js/libs/jquery.validationEngine.js"></script>
 	
 	<script src="../js/pages/mortgage-simulator-view.js"></script>
 

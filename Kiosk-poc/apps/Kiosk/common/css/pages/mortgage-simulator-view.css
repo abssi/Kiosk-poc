@@ -228,3 +228,10 @@ button#confirmationSubmit{
 	border-radius: 0px 0px 5px 5px;
 	
 }
+
+input.rightText {
+	text-align: right;
+}
+.popup-wrapper p{
+	text-align: center;
+}

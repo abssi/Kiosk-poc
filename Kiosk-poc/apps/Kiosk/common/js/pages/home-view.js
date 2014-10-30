@@ -21,8 +21,8 @@ function translate(lan){
 }
 
 
-$("#newmortgages").click(function() {
-
+$("#newmortgages").click(function(e) {
+	e.preventDefault();
 	loadPage("../pages/select-mortgage-type-view.html");
 		
 });
@@ -36,7 +36,11 @@ translate(ar);
 	
 		
 });
-
+//$( document ).on( "pageinit", "#page", function( event ) {
+//
+//$.mobile.loadPage( "../pages/select-mortgage-type-view.html", { showLoadMsg: false } );
+//
+//});
 
 
 

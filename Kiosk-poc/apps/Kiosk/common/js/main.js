@@ -29,6 +29,12 @@ function loadPage (url) {
 	
 	
 	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'slide',reverse:false});
+	
+} 
+function loadBackPage (url) {
+	
+	console.log(url);
+	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'slide',reverse:false});
 } 
 
 
