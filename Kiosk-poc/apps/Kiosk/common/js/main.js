@@ -28,13 +28,13 @@ function wlCommonInit () {
 function loadPage (url) {
 	
 	
-	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'slide',reverse:false});
+	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'none',reverse:false});
 	
 } 
 function loadBackPage (url) {
 	
-	console.log(url);
-	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'slide',reverse:false});
+	
+	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'none',reverse:true});
 } 
 
 

@@ -1,4 +1,4 @@
-<div data-role="page" id="page" >
+<div data-role="page" id="page">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../css/pages/select-mortgage-type-view.css">
 
@@ -31,21 +31,21 @@
 							<td class="home" id="options">
 								
 								<div class="bottom-title-effect"></div>
-								<p class="bottom-title">Nouveau crédit</p>
+								<p class="bottom-title">Construction existante</p>
 							</td>
 						</tr>
 						<tr class="spacer"></tr>
 						<tr class="home-investment">
 							<td class="home">
 								<div class="bottom-title-effect"></div>
-								<p class="bottom-title">Plan de retraite</p>
+								<p class="bottom-title">Nouvelle construction</p>
 							</td>
 						</tr>
 						<tr class="spacer"></tr>
 						<tr class="home-autoloan">
 							<td class="home">
 								<div class="bottom-title-effect"></div>
-								<p class="bottom-title">Roll In Style</p>
+								<p class="bottom-title">Crédit immobilier </p>
 							</td>
 						</tr>
 					</tbody>
@@ -61,12 +61,12 @@
 		</div>
 	</div>
 
-	<div data-role="popup" id="mortgae-amount"  data-dismissible="false" data-overlay-theme="b">
+	<div data-role="popup" id="mortgae-amount"  data-dismissible="false" data-overlay-theme="b" >
         <form>
               <h4 class="popup-title">Entrer le montant </h4>
-              <div class="mortgage-amount-wrapper">
+              <div class="popup-content-wrapper">
               <label for="amount">Estimer le mantant du crédit</label>
-              <input type="number"  min="100" max="50000000" id="amount" value="" placeholder="montant"  />
+              <input type="number" value="1000" step="100" min="100" max="50000000" id="amount" value="" placeholder="montant"  required/>
 
               
 

@@ -47,6 +47,7 @@ a#cs-continue {
 #table-wrapper {
 	width: 83%;
 	padding-left: 100px;
+	height: 320px;
 }
 
 .large-padding {
@@ -77,7 +78,7 @@ a#cs-continue {
 }
 
 tr.row {
-	
+	height: 61px;
 }
 
 tr.table-spacer {

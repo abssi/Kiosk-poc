@@ -46,17 +46,11 @@ a#cs-continue {
 	background: transparent !important;
 }
 
-.popup-title {
-	text-align: center;
-	background-color: #E76749;
-	color: white;
-	margin: 0px;
-	padding: 10px;
-}
-#mortgae-amount{
-	border-width: 0px;
-	
 
+#mortgae-amount{
+	
+	border-width: 0px;
+	background-color: transparent;
 }
 button#amountSubmit{
 	margin: 0px;
@@ -68,11 +62,4 @@ button#amountSubmit{
 	background-color: white;
 	padding-bottom: 15px;
 	padding-top: 15px;
-}
-.mortgage-amount-wrapper{
-	border-color: white;
-	border-width: 1px;
-	border-radius:10px;
-	padding: 5px;
-	
 }

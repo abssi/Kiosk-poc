@@ -1,4 +1,4 @@
-<div data-role="page" id="page" >
+<div data-role="page" id="page">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../css/pages/mortgage-simulator-view.css">
     <link rel="stylesheet" href="../css/form-validator.css">
@@ -7,7 +7,7 @@
 		
 		
 		<div class="left">
-			<a href="../pages/mortgage-options-view.html" data-transition="slide" data-direction="reverse">
+			<a href="../pages/mortgage-options-view.html" data-transition="none" data-direction="reverse">
 				<img alt="back" src="../images/header/back_arrow.png" />
 				<span class="back">Options de crédit</span>
 			</a>
@@ -28,10 +28,9 @@
 	
 	
 	<ul data-role="listview" data-inset="true"
-			class="property-details-list">
-			<li class="ui-field-contain">
+			class="property-details-list" id="mortgage-simulator-list">
+			
 
-			</li>
 			<li class="ui-field-contain">
 				<div class="thumb">
 					<img src="../images/content/terms.png" class="thumb-icon"></img>
@@ -146,9 +145,9 @@
 		
 				
 	</div>			
-             <div class="ui-grid-a ui-responsive">
-                 <div  class="ui-block-a"><a id="back" href="#" class="ui-btn ui-shadow">Regarder une autre Offre</a></div>
-                 <div  class="ui-block-b"><a id="submitButton" href="#" class="ui-btn ui-shadow">Appeler à un expert</a></div>
+             <div id="bottom-menu">
+                 <div  class="block-a"><a id="back" href="#" class="ui-btn ui-shadow">Regarder une autre Offre</a></div>
+                 <div  class="block-b"><a id="submitButton" href="#" class="ui-btn ui-shadow">Appeler à un expert</a></div>
              </div>
 				
 			</div>
@@ -159,7 +158,7 @@
 		<div data-role="popup" id="ask-expert"  data-dismissible="false" data-overlay-theme="b">
         <div class="popup-content">
               <h4 class="popup-title">Appeler un expert</h4>
-              <div class="popup-wrapper">
+              <div class="popup-content-wrapper">
               <p> 
               		Tous nos experts sont occupés en ce moment.<br>
               		Merci de laisser vos coordonnés on vous contactera dès que possible.    
@@ -168,7 +167,7 @@
 			        <form id="contact-info">
 			        <div data-type="horizontal">
 			        <label for="email">Email <em> * </em></label>
-			        <input id="email" class="validate[required,custom[email]]" type="email" placeholder="Email">
+			        <input id="email" class="validate[required,custom[email]]" type="email" placeholder="Email" />
 			        </div>
 			        
 			        <div data-type="horizontal">
@@ -194,12 +193,12 @@
     
     	<div data-role="popup" id="confirmation"  data-dismissible="false" data-overlay-theme="b">
         <div class="popup-content">
-              <h4 class="popup-title">Merci.</h4>
-              <div class="popup-wrapper">
+              <h4 class="popup-title">Merci pour votre interet.</h4>
+              <div class="popup-content-wrapper">
               <p> 
               		
               		Vous serai bientot  contacter par un de nos  experts. <br>
-              		Merci. 
+              		 
               </p>
               <button id="confirmationSubmit" >Ok</button>
               </div>

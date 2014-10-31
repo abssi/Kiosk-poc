@@ -9,7 +9,7 @@ $("#submitButton").on("click", function() {
 });
 $("#back").on("click", function(e) {
 	e.preventDefault();
-	loadPage ("mortgage-options-view.html");
+	loadBackPage ("mortgage-options-view.html");
 
 });
 
