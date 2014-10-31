@@ -248,4 +248,9 @@ input.rightText {
 	width: 50%;
 	float:right;
 }
+#page{
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+}
+.no-flick{-webkit-transform:translate3d(0,0,0);}
 

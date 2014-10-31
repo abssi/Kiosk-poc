@@ -1,16 +1,16 @@
 #options-wrapper {
-	height: 100%;
+	
 }
 
 .options-content {
-	height: 100%;
+	height: 994px;
 	margin-right: 5px;
 	margin-left: 5px;
 }
 
 .options-top {
 	width: 100%;
-	height: 84%;
+	height: 834px;
 	border-spacing: 0px;
 	overflow: hidden;
 	padding-top: 100px;
@@ -98,7 +98,7 @@ img.info-thumb {
 
 .button-wrapper {
 	border: solid 1px #EE5A48;
-   
+    height: 50px;
     padding-top:10px;
     padding-bottom:10px;
     font-size:30px;
@@ -110,3 +110,11 @@ img.info-thumb {
 /* 	padding-top: 15px; */
 	width: 88%; 
 }
+/* #page-content{ */
+/* 	position: relative; */
+/* } */
+/* #page{ */
+/* 	-webkit-perspective: 1000; */
+/* 	-webkit-backface-visibility: hidden; */
+/* } */
+/* .no-flick{-webkit-transform:translate3d(0,0,0);} */
