@@ -21,12 +21,22 @@ $("#submitButton").on("click", function() {
 		 if(correct){
 		e.preventDefault();
 		$( "#ask-expert" ).popup('close');
+	 $( "#ask-expert").one({
+		        popupafterclose: function() {
+		        
+		            
+		            	
+		            	
+		        	    
+		        	$( "#confirmation" ).popup();
+					$( "#confirmation" ).popup('open');
+					   
+		            	
+		           
+		        }
+		    });
 		
-		setTimeout(function()
-		         {
-			$( "#confirmation" ).popup();
-			$( "#confirmation" ).popup('open');
-		         }, 100);
+		
 		 }
 		
 //	    selectedAmount=$('#amount').val();
