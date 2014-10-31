@@ -15,13 +15,19 @@ $("#header-back").on("click", function(e) {
 $("#submitButton").on("click", function() {
 	 $( "#ask-expert" ).popup();
 	$( "#ask-expert" ).popup('open');
+	 $( "#cancel").click(function(e) {
+		 
+			e.preventDefault();
+			$( "#ask-expert" ).popup('close');
+
+	     });
 	 $( "#popupSubmmit").click(function(e) {
 		 var correct= $("#contact-info").validationEngine('validate');
 		
 		 if(correct){
 		e.preventDefault();
 		$( "#ask-expert" ).popup('close');
-	 $( "#ask-expert").one({
+	    $( "#ask-expert").one({
 		        popupafterclose: function() {
 		        
 		            
@@ -30,6 +36,17 @@ $("#submitButton").on("click", function() {
 		        	    
 		        	$( "#confirmation" ).popup();
 					$( "#confirmation" ).popup('open');
+					 $( "#confirmationSubmit").click(function(e) {
+						 
+							e.preventDefault();
+						//	$( "#confirmation" ).popup('close');
+//						    selectedAmount=$('#amount').val();
+						    loadPage("../pages/next-best-offer-view.html");
+					     });
+					  
+					 
+					 
+					 
 					   
 		            	
 		           
@@ -144,23 +161,7 @@ function loan() {
 		
 		 
 		  
-		  $( "#confirmationSubmit").click(function(e) {
-				 
-				e.preventDefault();
-			//	$( "#confirmation" ).popup('close');
-//			    selectedAmount=$('#amount').val();
-			    loadPage("../pages/next-best-offer-view.html");
-		     });
-		  
 		 
-		 
-		  $( "#cancel").click(function(e) {
-				 
-				e.preventDefault();
-				$( "#ask-expert" ).popup('close');
-//			    selectedAmount=$('#amount').val();
-//			    loadPage("../pages/mortgage-options-view.html");
-		     });
 	});
 
 
