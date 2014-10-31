@@ -8,7 +8,7 @@ function initPopUp(){
 	        
 	            
 	            	
-	            	//alert('after close');
+	            	
 	        	    
 				    selectedAmount=$('#amount').val();
 				    loadPage("../pages/mortgage-options-view.html");
