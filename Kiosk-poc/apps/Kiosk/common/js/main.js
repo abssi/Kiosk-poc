@@ -28,14 +28,19 @@ function wlCommonInit () {
 function loadPage (url) {
 	
 	
-	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'none',reverse:false});
+	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'slide',reverse:false});
 	
 } 
 function loadBackPage (url) {
 	
 	
-	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'none',reverse:true});
+	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:'slide',reverse:true});
 } 
+function loadBackPage (url,transition) {
+	
+	
+	$(":mobile-pagecontainer").pagecontainer ("change", url,{transition:transition,reverse:true});
+}
 
 
 function getConnectionStatus () {

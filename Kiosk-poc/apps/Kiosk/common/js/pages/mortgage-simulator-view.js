@@ -37,7 +37,7 @@ $("#submitButton").on("click", function() {
 $("#back").on("click", function(e) {
 	e.preventDefault();
 	selectedAmount=$("#amount").val();
-	loadBackPage ("mortgage-options-view.html");
+	loadBackPage ("mortgage-options-view.html","none");
 
 });
 
