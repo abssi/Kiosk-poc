@@ -1,9 +1,10 @@
+
 #options-wrapper {
-	
+	height: 100%;
 }
 
 .options-content {
-	height: 994px;
+	height: 100%;
 	margin-right: 5px;
 	margin-left: 5px;
 }
