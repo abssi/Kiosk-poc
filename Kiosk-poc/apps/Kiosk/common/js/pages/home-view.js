@@ -11,13 +11,39 @@ var ar={
 		"refinance":"إعادة التمويل",
 		
 };
+var currentLang;
+var choosingLang="fr";
 
 
 function translate(lan){
+	
 	$('#new-mortgage').text(lan.newMortgage);
 	$('#propreties').text(lan.propreties);
 	$('#refinance').text(lan.refinance);
 	
+}
+
+function displayRedPopup (dismissibleBool, translateBool) {
+	$("#confirmationPopup").attr ("data-dismissible", dismissibleBool);
+	
+	$("#confirmationPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
+	$("#confirmationPopup").popup ("open");
+		
+	setTimeout (
+		function () {
+			$("#confirmationPopup").popup ("close");
+		}, 
+		4000
+	);
+	
+	$(document).bind ({
+		popupafterclose: function (event, ui) {
+			if (translateBool) {
+				//console.log ("yes translate");
+				translate (currentLang);
+			}
+		}
+	});
 }
 
 
@@ -27,13 +53,19 @@ $("#newmortgages").click(function(e) {
 		
 });
 $("#go-fr").click(function() {
-
-	translate(fr);
+	if(choosingLang=="ar"){
+	currentLang=fr;
+	displayRedPopup(false, true);
+	choosingLang="fr"
+	}
 		
 });
 $("#go-ar").click(function() {
-translate(ar);
-	
+  if(choosingLang=="fr"){
+  currentLang=ar;
+  displayRedPopup(false, true);
+  choosingLang="ar"
+  }
 		
 });
 //$( document ).on( "pageinit", "#page", function( event ) {

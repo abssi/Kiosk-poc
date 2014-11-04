@@ -3,25 +3,33 @@ function initPopUp(){
 	$( "#mortgae-amount" ).popup('open');
 	//document.getElementById("amount").focus();
 	
-	 $( "#mortgae-amount").one({
-	        popupafterclose: function() {
-	        
-	            
-	            	
-	            	
-	        	    
-				    selectedAmount=$('#amount').val();
-				    loadPage("../pages/mortgage-options-view.html");
-				   
-	            	
-	           
-	        }
-	    });
+	 
 
 }
-$("#options").one('click',function(e) {
+$("#options").on('click',function(e) {
 	e.preventDefault();
 	initPopUp();
+	
+});
+
+$("#amountSubmit").one('click',function(e) {
+	
+	//e.preventDefault();
+	$( "#mortgae-amount").one({
+        popupafterclose: function() {
+     
+         
+         	
+         	
+     	    
+			    selectedAmount=$('#amount').val();
+			    loadPage("../pages/mortgage-options-view.html");
+			   
+         	
+        
+     }
+ });
+	
 	
 });
 // for validating only numerical  inputs 
@@ -35,7 +43,9 @@ function checnum(as) {
 }  
 
 // most functions removed from here due to multiple call problem/bug
-$( document ).on( "pageinit", "#page", function(  ) {
-	
+//$( document ).on( "pageinit", "#page", function(  ) {
+//	
+//
+//});
 
-});
+
