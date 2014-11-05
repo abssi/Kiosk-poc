@@ -6,7 +6,7 @@ var fr={
 };
 
 var ar={
-		"newMortgage":"سلف  جديد",
+		"newMortgage":"رهن عقاري  جديد",
 		"propreties":"عقارات",
 		"refinance":"إعادة التمويل",
 		
