@@ -2,6 +2,7 @@ var fr={
 		"newMortgage":"Nouveau crédit",
 		"propreties":"Mes propriétés",
 		"refinance":"Refinancement",
+		"popupText":"Chargement des fichiers de langue...</br></br>Merci de patienter."
 		
 };
 
@@ -9,6 +10,7 @@ var ar={
 		"newMortgage":"رهن عقاري  جديد",
 		"propreties":"عقارات",
 		"refinance":"إعادة التمويل",
+		"popupText":"تحميل ملفات اللغة </br></br>  .الرجاء الانتظار"
 		
 };
 var currentLang;
@@ -23,9 +25,9 @@ function translate(lan){
 	
 }
 
-function displayRedPopup (dismissibleBool, translateBool) {
+function displayRedPopup (dismissibleBool, translateBool,popupText) {
 	$("#confirmationPopup").attr ("data-dismissible", dismissibleBool);
-	
+	$('.loading-language').html(popupText);
 	$("#confirmationPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
 	$("#confirmationPopup").popup ("open");
 		
@@ -55,7 +57,7 @@ $("#newmortgages").click(function(e) {
 $("#go-fr").click(function() {
 	if(choosingLang=="ar"){
 	currentLang=fr;
-	displayRedPopup(false, true);
+	displayRedPopup(false, true,ar.popupText);
 	choosingLang="fr"
 	}
 		
@@ -63,7 +65,7 @@ $("#go-fr").click(function() {
 $("#go-ar").click(function() {
   if(choosingLang=="fr"){
   currentLang=ar;
-  displayRedPopup(false, true);
+  displayRedPopup(false, true,fr.popupText);
   choosingLang="ar"
   }
 		
