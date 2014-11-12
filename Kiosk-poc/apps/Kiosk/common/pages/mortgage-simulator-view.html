@@ -31,7 +31,7 @@
 			class="property-details-list" id="mortgage-simulator-list">
 			
 
-			<li class="ui-field-contain">
+			<li class="ui-field-contain not-editable">
 				<div class="thumb">
 					<img src="../images/content/terms.png" class="thumb-icon"></img>
 				</div>
@@ -49,7 +49,7 @@
 				</div>
 
 			</li>
-			<li class="ui-field-contain">
+			<li class="ui-field-contain not-editable">
 				<div class="thumb">
 					<img src="../images/content/percent.png" class="thumb-icon"></img>
 				</div>
@@ -67,7 +67,7 @@
 				</div>
 			</li>
 			
-			<li class="ui-field-contain">
+			<li class="ui-field-contain ">
 				<div class="thumb">
 					<img src="../images/content/amount.png" class="thumb-icon"></img>
 				</div>
@@ -76,7 +76,7 @@
 						<span class="attribute-label">Montant du prêt</span> 
 						<span class="attribute-value">
 
-					<input class="rightText" id="amount" onkeyup=checkAndValidate(this) onchange=loan() data-wrapper-class="ui-custom"type = "text"/>
+					<input class="rightText" id="amount" onkeyup=checkAndValidate(this) onchange=loan() data-wrapper-class="ui-custom"type = "number"/>
 
 						</span>
 					</p>
@@ -85,7 +85,7 @@
 					<img src="../images/content/info.png" class="thumb-icon"></img>
 				</div>
 			</li>
-			<li class="ui-field-contain">
+			<li class="ui-field-contain not-editable">
 				<div class="ui-li-thumb thumb">
 					<img src="../images/content/estimate.png" class="thumb-icon"></img>
 				</div>
@@ -102,7 +102,7 @@
 				</div>
 </li>
 
-				<li class="ui-field-contain">
+				<li class="ui-field-contain not-editable">
 				<div class="ui-li-thumb thumb">
 					<img src="../images/content/pmi.png" class="thumb-icon"></img>
 				</div>
@@ -126,17 +126,17 @@
     <table style="width: 100%;">
 	<tr>
 	<td> <p><strong>Mensualités</strong></p>
-	<input class="centerText bigText" data-wrapper-class="ui-custom"type = "text"  /></td>
+	<input class="centerText bigText" data-wrapper-class="ui-custom"type = "text"  readonly="readonly" /></td>
 	
 	<td> <p><strong>Intérêts payés</strong></p>
-	<input class="centerText bigText" data-wrapper-class="ui-custom" type = "text"  /></td>
+	<input class="centerText bigText" data-wrapper-class="ui-custom" type = "text" readonly="readonly" /></td>
 	</tr>
 	<tr>
 	<td> <p><strong>Impôts payés </strong></p>
-	<input class="centerText bigText" data-wrapper-class="ui-custom" type = "text"  />
+	<input class="centerText bigText" data-wrapper-class="ui-custom" type = "text"  readonly="readonly"/>
 	</td>
 	<td> <p><strong>Assurance payées </strong></p>
-	<input class="centerText bigText" data-wrapper-class="ui-custom" type = "text"  />
+	<input class="centerText bigText" data-wrapper-class="ui-custom" type = "text" readonly="readonly" />
 	 </td>
 	</tr>
 	</table>

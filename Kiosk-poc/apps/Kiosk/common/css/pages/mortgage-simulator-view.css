@@ -103,6 +103,9 @@ input.rightText {
 	overflow: hidden;
 	white-space: nowrap;
 }
+.ui-listview li.not-editable{
+	background-color: #F5F5F5;
+}
 
 a#back {
 	margin: 0;
