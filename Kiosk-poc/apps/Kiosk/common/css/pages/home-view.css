@@ -42,6 +42,7 @@ a#go-ar {
 	padding: 20px;
 	background-color:#ef5a49;
 	color: #FFF;
+	min-width: 400px;
 }
 
 #confirmationPopup p.loader {

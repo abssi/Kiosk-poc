@@ -2,16 +2,16 @@ var fr={
 		"newMortgage":"Nouveau crédit",
 		"propreties":"Mes propriétés",
 		"refinance":"Refinancement",
-		"popupText":"Chargement des fichiers de langue...</br></br>Merci de patienter."
-		
+		"popupText":"Chargement des fichiers de langue...</br></br>Merci de patienter.",
+		"policeSize":"Taille Police"
 };
 
 var ar={
 		"newMortgage":"رهن عقاري  جديد",
 		"propreties":"عقارات",
 		"refinance":"إعادة التمويل",
-		"popupText":"تحميل ملفات اللغة </br></br>  .الرجاء الانتظار"
-		
+		"popupText":"تحميل ملفات اللغة</br></br>  .الرجاء الانتظار",
+		"policeSize":"حجم الخط"
 };
 var currentLang;
 var choosingLang="fr";
@@ -22,6 +22,7 @@ function translate(lan){
 	$('#new-mortgage').text(lan.newMortgage);
 	$('#propreties').text(lan.propreties);
 	$('#refinance').text(lan.refinance);
+	$('#policeSize').text(lan.policeSize);
 	
 }
 
@@ -70,11 +71,7 @@ $("#go-ar").click(function() {
   }
 		
 });
-//$( document ).on( "pageinit", "#page", function( event ) {
-//
-//$.mobile.loadPage( "../pages/select-mortgage-type-view.html", { showLoadMsg: false } );
-//
-//});
+
 
 
 

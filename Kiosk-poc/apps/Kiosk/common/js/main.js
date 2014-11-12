@@ -50,3 +50,41 @@ function getConnectionStatus () {
 function setConnectionStatus (status) {
 	connected = status;
 }
+// Change size code
+var countZoom = 0;
+var zoom = 0;
+
+function changeSize () {
+	$('div *, p *, span *, li *, a *').each(function () {
+        var el = $(this);
+        var size = el.data('font-size');
+        el.css('font-size', Math.max (size + zoom, 0) + 'px');
+    });
+}
+
+$(document).on ("pageshow", function () {
+	
+	
+	$('div *, p *, span *, li *, a *').each(function () {
+	    var el = $(this);
+	    var size = parseInt(el.css('font-size'));
+	    el.data('font-size', size);
+	});
+	
+	$("#changeSizeAction").on ("click", function () {
+		
+		countZoom ++;
+		
+		if (countZoom % 3 == 0) {
+			zoom = 0;
+			changeSize ();
+		} else if (countZoom % 3 == 1) {
+			zoom = 1;
+			changeSize ();
+		} else if (countZoom % 3 == 2) {
+			zoom = 3;
+			changeSize ();
+		}
+		
+	});
+});

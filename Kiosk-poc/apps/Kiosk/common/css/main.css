@@ -121,7 +121,7 @@ html, body {
 	text-decoration: none;
 	color: #FFF;
 	height: 40px;
-	margin-top: 8px;
+	
 	display: block;
 	float: right;
 	font-size: 20px;
@@ -257,6 +257,14 @@ html, body {
 }
 
 #footer .footer-action span.label {
+	display: block;
+	margin: 0 auto;
+	color: #FFF;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+#header .header-action span.label {
 	display: block;
 	margin: 0 auto;
 	color: #FFF;
