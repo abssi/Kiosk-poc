@@ -88,3 +88,11 @@ a#homeButton {
 	font-size: 30px;
 	z-index: 10;
 }
+
+#homeButton:active,
+#homeButton:focus,
+#homeButton:hover{
+	color: #FFF;
+	background-color: #ef5a49;
+	text-shadow: none;
+}

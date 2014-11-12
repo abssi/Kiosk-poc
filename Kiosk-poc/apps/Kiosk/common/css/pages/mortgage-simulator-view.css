@@ -257,3 +257,25 @@ input.rightText {
 }
 .no-flick{-webkit-transform:translate3d(0,0,0);}
 
+#confirmationSubmit:active,
+#confirmationSubmit:focus,
+#confirmationSubmit:hover,
+
+#cancel:active,
+#popupSubmmit:active, 
+#cancel:focus,
+#popupSubmmit:focus,
+#cancel:hover,
+#popupSubmmit:hover,
+#back:active,
+#submitButton:active, 
+#back:focus,
+#submitButton:focus,
+#back:hover,
+#submitButton:hover {
+	color: #FFF;
+	background-color: #ef5a49;
+	text-shadow: none;
+}
+
+

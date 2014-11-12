@@ -63,3 +63,11 @@ button#amountSubmit{
 	padding-bottom: 15px;
 	padding-top: 15px;
 }
+
+#amountSubmit:active,
+#amountSubmit:focus,
+#amountSubmit:hover{
+	color: #FFF;
+	background-color: #ef5a49;
+	text-shadow: none;
+}
